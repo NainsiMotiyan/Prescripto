@@ -20,6 +20,8 @@ const Doctors = () => {
 
   useEffect(()=>{
     applyFilter()
+    console.log("Doctors' specialities:", doctors.map(d => d.speciality));
+  console.log("Speciality from URL:", speciality);
   } , [doctors , speciality])
 
   return (
